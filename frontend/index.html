@@ -71,7 +71,7 @@
         async function fetchDetails() {
             try {
                 // Fetching from backend as required by Task 1.2
-                const response = await fetch('http://localhost:5000/student-details');
+                const response = await fetch('http://35.225.184.15:5000/api/data');
                 const data = await response.json();
 
                 document.getElementById('api-status').innerText = "✅ API Connected";
